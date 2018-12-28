@@ -7,3 +7,6 @@ import (
 func main() {
     fmt.Println("Hello, playground")
 }
+
+
+// go run playground.go
