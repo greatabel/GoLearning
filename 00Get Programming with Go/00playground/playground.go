@@ -6,6 +6,9 @@ import (
 
 func main() {
     fmt.Println("Hello, playground")
+    fmt.Println("Hello, world")
+    fmt.Println("你好，世界")
+    fmt.Println("こんにちは、世界")
 }
 
 
