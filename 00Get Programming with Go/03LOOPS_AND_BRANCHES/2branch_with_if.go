@@ -9,4 +9,7 @@ func main() {
     } else {
         fmt.Println("Did't quite get that.")
     }
+
+    //Which is greater, an “apple” or a “banana”?
+    fmt.Println("apple" > "banana")
 }
