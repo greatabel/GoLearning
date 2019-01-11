@@ -16,10 +16,11 @@ func main() {
         rand.Seed(time.Now().UTC().UnixNano())
 
         year := rand.Intn(2019) + 1
+        // year = 1913
         month := rand.Intn(12) + 1
         dayInMonth := 31
 
-        switch month := rand.Intn(12) + 1; month {
+        switch month {
         case 2:
             var leap = year%400 == 0 || (year%4 == 0 && year%100 != 0)
             if leap {

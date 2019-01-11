@@ -16,7 +16,7 @@ func main() {
     month := rand.Intn(12) + 1
     dayInMonth := 31
 
-    switch month := rand.Intn(12) + 1; month {
+    switch month {
     case 2:
         dayInMonth = 28
     case 4, 6, 9, 11:
