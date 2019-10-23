@@ -1,9 +1,15 @@
 package search
 
-import (
-    "log"
-    "sync"
-)
+// defaultMatcher implements the default matcher.
+type defaultMatcher struct{}
 
-// A map of registered matchers for searching.
-var matchers = make(map[string]Matcher)
+// init registers the default matcher with the program.
+func init() {
+    var matcher defaultMatcher
+    Register("default", matcher)
+}
+
+// Search implements the behavior for the default matcher.
+func (m defaultMatcher) Search(feed *Feed, searchTerm string) ([]*Result, error) {
+    return nil, nil
+}
