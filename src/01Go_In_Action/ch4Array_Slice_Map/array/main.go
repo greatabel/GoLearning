@@ -10,6 +10,10 @@ import (
 // main is the entry point for the application.
 func main() {
     // var array [5]int
-    array := [5]int{10, 20, 30, 40, 50}
+
+    // array := [5]int{10, 20, 30, 40, 50}
+    
+    // 容量初始值决定
+    array := [...]int{100, 200, 300}
     fmt.Printf("There are %d words in your text. \n", array[0])
 }
