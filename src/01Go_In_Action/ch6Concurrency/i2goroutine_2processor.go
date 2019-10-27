@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-    
+    fmt.Println(runtime.NumCPU())
     // 这个函数允许程序 更改调度器可以使用的逻辑处理器的数量
-    runtime.GOMAXPROCS(1)
+    runtime.GOMAXPROCS(2)
 
     var wg sync.WaitGroup
     wg.Add(2)
