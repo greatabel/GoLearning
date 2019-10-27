@@ -17,6 +17,15 @@ func main() {
     // }
     fmt.Printf("%s haha\n", dict["FakeColor"])
 
+    value, exists := dict["Blue"]
+    if exists {
+        fmt.Printf(value)
+    }
+
+    valueR := dict["Red"]
+    if valueR != "" {
+        fmt.Println(valueR)
+    }
 
 
 
