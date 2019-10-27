@@ -13,7 +13,7 @@ var (
     // wg is used to wait for the program to finish.
     wg sync.WaitGroup
 
-    // // mutex 用来定义一段代码临界区
+    //  mutex 用来定义一段代码临界区
     mutex sync.Mutex
 )
 
