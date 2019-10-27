@@ -33,6 +33,7 @@ func main() {
         "DarkGray":    "#a9a9a9",
         "ForestGreen": "#228b22",
     }
+    delete(colors, "Coral")
     for key, value := range colors {
         fmt.Printf("Key: %s Value: %s\n", key, value)
     }
