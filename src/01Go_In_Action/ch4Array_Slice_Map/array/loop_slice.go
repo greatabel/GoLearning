@@ -11,6 +11,11 @@ func main() {
     for index, value := range slice {
         fmt.Printf("Index: %d Value: %d\n", index, value)
     }
+    
+    // 迭代每个元素，并显示值和地址
+    for index, value := range slice {
+    fmt.Printf("Value: %d Value-Addr: %X ElemAddr: %X\n", value, &value, &slice[index])
+    }
 
 
 
